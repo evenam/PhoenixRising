@@ -1,0 +1,8 @@
+background_scroll_speed -1
+player 368 400
+enemy 2 336 100 64 64 0.8 20
+enemy 2 336 200 64 64 0.8 20
+enemy 2 236 100 64 64 0.8 15
+enemy 2 236 200 64 64 0.8 15
+enemy 2 436 100 64 64 0.8 15
+enemy 2 436 200 64 64 0.8 15
