@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		283248EF17DE58AF006E0F04 /* PhoenixRising.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 283248EE17DE58AF006E0F04 /* PhoenixRising.1 */; };
+		285E3EA117DE59C400C3983C /* DataTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8017DE59C400C3983C /* DataTypes.cpp */; };
+		285E3EA217DE59C400C3983C /* DifficultyMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8217DE59C400C3983C /* DifficultyMenu.cpp */; };
+		285E3EA317DE59C400C3983C /* EnemyBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8417DE59C400C3983C /* EnemyBullet.cpp */; };
+		285E3EA417DE59C400C3983C /* EnemyShip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8617DE59C400C3983C /* EnemyShip.cpp */; };
+		285E3EA517DE59C400C3983C /* EnterNameMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8817DE59C400C3983C /* EnterNameMenu.cpp */; };
+		285E3EA617DE59C400C3983C /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8A17DE59C400C3983C /* Graphics.cpp */; };
+		285E3EA717DE59C400C3983C /* HighscoresMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8C17DE59C400C3983C /* HighscoresMenu.cpp */; };
+		285E3EA817DE59C400C3983C /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E8E17DE59C400C3983C /* Level.cpp */; };
+		285E3EA917DE59C400C3983C /* LoadingScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9017DE59C400C3983C /* LoadingScreen.cpp */; };
+		285E3EAA17DE59C400C3983C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9217DE59C400C3983C /* main.cpp */; };
+		285E3EAB17DE59C400C3983C /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9317DE59C400C3983C /* MainMenu.cpp */; };
+		285E3EAC17DE59C400C3983C /* PauseMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9517DE59C400C3983C /* PauseMenu.cpp */; };
+		285E3EAD17DE59C400C3983C /* Play.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9717DE59C400C3983C /* Play.cpp */; };
+		285E3EAE17DE59C400C3983C /* PlayerBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9917DE59C400C3983C /* PlayerBullet.cpp */; };
+		285E3EAF17DE59C400C3983C /* PlayerShip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9B17DE59C400C3983C /* PlayerShip.cpp */; };
+		285E3EB017DE59C400C3983C /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9E17DE59C400C3983C /* SDLMain.m */; };
+		285E3EB117DE59C400C3983C /* XboxController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285E3E9F17DE59C400C3983C /* XboxController.cpp */; };
+		285E3EB317DE59E400C3983C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E3EB217DE59E400C3983C /* Cocoa.framework */; };
+		285E3EB717DE59F300C3983C /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E3EB417DE59F300C3983C /* SDL_image.framework */; };
+		285E3EB817DE59F300C3983C /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E3EB517DE59F300C3983C /* SDL_ttf.framework */; };
+		285E3EB917DE59F300C3983C /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E3EB617DE59F300C3983C /* SDL.framework */; };
+		28DD173417DE696B001AB172 /* background.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171217DE66A9001AB172 /* background.png */; };
+		28DD173517DE696B001AB172 /* enemybullet.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171317DE66A9001AB172 /* enemybullet.png */; };
+		28DD173617DE696B001AB172 /* enemyship.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171417DE66A9001AB172 /* enemyship.png */; };
+		28DD173717DE696B001AB172 /* game_font.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171517DE66A9001AB172 /* game_font.ttf */; };
+		28DD173817DE696B001AB172 /* highscores.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171617DE66A9001AB172 /* highscores.dat */; };
+		28DD173917DE696B001AB172 /* level1.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171717DE66A9001AB172 /* level1.dat */; };
+		28DD173A17DE696B001AB172 /* level2.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171817DE66A9001AB172 /* level2.dat */; };
+		28DD173B17DE696B001AB172 /* level3.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171917DE66A9001AB172 /* level3.dat */; };
+		28DD173C17DE696B001AB172 /* level4.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171A17DE66A9001AB172 /* level4.dat */; };
+		28DD173D17DE696B001AB172 /* level5.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171B17DE66A9001AB172 /* level5.dat */; };
+		28DD173E17DE696B001AB172 /* mainmenu.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171C17DE66A9001AB172 /* mainmenu.png */; };
+		28DD173F17DE696B001AB172 /* menu.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171D17DE66A9001AB172 /* menu.png */; };
+		28DD174017DE696B001AB172 /* playerbullet.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171E17DE66A9001AB172 /* playerbullet.png */; };
+		28DD174117DE696B001AB172 /* playership.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD171F17DE66A9001AB172 /* playership.png */; };
+		28DD174217DE696B001AB172 /* resources.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28DD172117DE66AA001AB172 /* resources.dat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		283248E717DE58AF006E0F04 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+				283248EF17DE58AF006E0F04 /* PhoenixRising.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		28DD173317DE6957001AB172 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				28DD173417DE696B001AB172 /* background.png in CopyFiles */,
+				28DD173517DE696B001AB172 /* enemybullet.png in CopyFiles */,
+				28DD173617DE696B001AB172 /* enemyship.png in CopyFiles */,
+				28DD173717DE696B001AB172 /* game_font.ttf in CopyFiles */,
+				28DD173817DE696B001AB172 /* highscores.dat in CopyFiles */,
+				28DD173917DE696B001AB172 /* level1.dat in CopyFiles */,
+				28DD173A17DE696B001AB172 /* level2.dat in CopyFiles */,
+				28DD173B17DE696B001AB172 /* level3.dat in CopyFiles */,
+				28DD173C17DE696B001AB172 /* level4.dat in CopyFiles */,
+				28DD173D17DE696B001AB172 /* level5.dat in CopyFiles */,
+				28DD173E17DE696B001AB172 /* mainmenu.png in CopyFiles */,
+				28DD173F17DE696B001AB172 /* menu.png in CopyFiles */,
+				28DD174017DE696B001AB172 /* playerbullet.png in CopyFiles */,
+				28DD174117DE696B001AB172 /* playership.png in CopyFiles */,
+				28DD174217DE696B001AB172 /* resources.dat in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		283248E917DE58AF006E0F04 /* PhoenixRising */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhoenixRising; sourceTree = BUILT_PRODUCTS_DIR; };
+		283248EE17DE58AF006E0F04 /* PhoenixRising.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PhoenixRising.1; sourceTree = "<group>"; };
+		285E3E8017DE59C400C3983C /* DataTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataTypes.cpp; path = PhoenixRising/DataTypes.cpp; sourceTree = "<group>"; };
+		285E3E8117DE59C400C3983C /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataTypes.h; path = PhoenixRising/DataTypes.h; sourceTree = "<group>"; };
+		285E3E8217DE59C400C3983C /* DifficultyMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DifficultyMenu.cpp; path = PhoenixRising/DifficultyMenu.cpp; sourceTree = "<group>"; };
+		285E3E8317DE59C400C3983C /* DifficultyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DifficultyMenu.h; path = PhoenixRising/DifficultyMenu.h; sourceTree = "<group>"; };
+		285E3E8417DE59C400C3983C /* EnemyBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnemyBullet.cpp; path = PhoenixRising/EnemyBullet.cpp; sourceTree = "<group>"; };
+		285E3E8517DE59C400C3983C /* EnemyBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnemyBullet.h; path = PhoenixRising/EnemyBullet.h; sourceTree = "<group>"; };
+		285E3E8617DE59C400C3983C /* EnemyShip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnemyShip.cpp; path = PhoenixRising/EnemyShip.cpp; sourceTree = "<group>"; };
+		285E3E8717DE59C400C3983C /* EnemyShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnemyShip.h; path = PhoenixRising/EnemyShip.h; sourceTree = "<group>"; };
+		285E3E8817DE59C400C3983C /* EnterNameMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnterNameMenu.cpp; path = PhoenixRising/EnterNameMenu.cpp; sourceTree = "<group>"; };
+		285E3E8917DE59C400C3983C /* EnterNameMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnterNameMenu.h; path = PhoenixRising/EnterNameMenu.h; sourceTree = "<group>"; };
+		285E3E8A17DE59C400C3983C /* Graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Graphics.cpp; path = PhoenixRising/Graphics.cpp; sourceTree = "<group>"; };
+		285E3E8B17DE59C400C3983C /* Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Graphics.h; path = PhoenixRising/Graphics.h; sourceTree = "<group>"; };
+		285E3E8C17DE59C400C3983C /* HighscoresMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HighscoresMenu.cpp; path = PhoenixRising/HighscoresMenu.cpp; sourceTree = "<group>"; };
+		285E3E8D17DE59C400C3983C /* HighscoresMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighscoresMenu.h; path = PhoenixRising/HighscoresMenu.h; sourceTree = "<group>"; };
+		285E3E8E17DE59C400C3983C /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Level.cpp; path = PhoenixRising/Level.cpp; sourceTree = "<group>"; };
+		285E3E8F17DE59C400C3983C /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = PhoenixRising/Level.h; sourceTree = "<group>"; };
+		285E3E9017DE59C400C3983C /* LoadingScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoadingScreen.cpp; path = PhoenixRising/LoadingScreen.cpp; sourceTree = "<group>"; };
+		285E3E9117DE59C400C3983C /* LoadingScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingScreen.h; path = PhoenixRising/LoadingScreen.h; sourceTree = "<group>"; };
+		285E3E9217DE59C400C3983C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = PhoenixRising/main.cpp; sourceTree = "<group>"; };
+		285E3E9317DE59C400C3983C /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenu.cpp; path = PhoenixRising/MainMenu.cpp; sourceTree = "<group>"; };
+		285E3E9417DE59C400C3983C /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = PhoenixRising/MainMenu.h; sourceTree = "<group>"; };
+		285E3E9517DE59C400C3983C /* PauseMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PauseMenu.cpp; path = PhoenixRising/PauseMenu.cpp; sourceTree = "<group>"; };
+		285E3E9617DE59C400C3983C /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenu.h; path = PhoenixRising/PauseMenu.h; sourceTree = "<group>"; };
+		285E3E9717DE59C400C3983C /* Play.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Play.cpp; path = PhoenixRising/Play.cpp; sourceTree = "<group>"; };
+		285E3E9817DE59C400C3983C /* Play.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Play.h; path = PhoenixRising/Play.h; sourceTree = "<group>"; };
+		285E3E9917DE59C400C3983C /* PlayerBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerBullet.cpp; path = PhoenixRising/PlayerBullet.cpp; sourceTree = "<group>"; };
+		285E3E9A17DE59C400C3983C /* PlayerBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerBullet.h; path = PhoenixRising/PlayerBullet.h; sourceTree = "<group>"; };
+		285E3E9B17DE59C400C3983C /* PlayerShip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerShip.cpp; path = PhoenixRising/PlayerShip.cpp; sourceTree = "<group>"; };
+		285E3E9C17DE59C400C3983C /* PlayerShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerShip.h; path = PhoenixRising/PlayerShip.h; sourceTree = "<group>"; };
+		285E3E9D17DE59C400C3983C /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = PhoenixRising/SDLMain.h; sourceTree = "<group>"; };
+		285E3E9E17DE59C400C3983C /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = PhoenixRising/SDLMain.m; sourceTree = "<group>"; };
+		285E3E9F17DE59C400C3983C /* XboxController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XboxController.cpp; path = PhoenixRising/XboxController.cpp; sourceTree = "<group>"; };
+		285E3EA017DE59C400C3983C /* XboxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XboxController.h; path = PhoenixRising/XboxController.h; sourceTree = "<group>"; };
+		285E3EB217DE59E400C3983C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		285E3EB417DE59F300C3983C /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
+		285E3EB517DE59F300C3983C /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
+		285E3EB617DE59F300C3983C /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		28DD171217DE66A9001AB172 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = PhoenixRising/background.png; sourceTree = "<group>"; };
+		28DD171317DE66A9001AB172 /* enemybullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enemybullet.png; path = PhoenixRising/enemybullet.png; sourceTree = "<group>"; };
+		28DD171417DE66A9001AB172 /* enemyship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enemyship.png; path = PhoenixRising/enemyship.png; sourceTree = "<group>"; };
+		28DD171517DE66A9001AB172 /* game_font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = game_font.ttf; path = PhoenixRising/game_font.ttf; sourceTree = "<group>"; };
+		28DD171617DE66A9001AB172 /* highscores.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = highscores.dat; path = PhoenixRising/highscores.dat; sourceTree = "<group>"; };
+		28DD171717DE66A9001AB172 /* level1.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level1.dat; path = PhoenixRising/level1.dat; sourceTree = "<group>"; };
+		28DD171817DE66A9001AB172 /* level2.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level2.dat; path = PhoenixRising/level2.dat; sourceTree = "<group>"; };
+		28DD171917DE66A9001AB172 /* level3.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level3.dat; path = PhoenixRising/level3.dat; sourceTree = "<group>"; };
+		28DD171A17DE66A9001AB172 /* level4.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level4.dat; path = PhoenixRising/level4.dat; sourceTree = "<group>"; };
+		28DD171B17DE66A9001AB172 /* level5.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level5.dat; path = PhoenixRising/level5.dat; sourceTree = "<group>"; };
+		28DD171C17DE66A9001AB172 /* mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainmenu.png; path = PhoenixRising/mainmenu.png; sourceTree = "<group>"; };
+		28DD171D17DE66A9001AB172 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = PhoenixRising/menu.png; sourceTree = "<group>"; };
+		28DD171E17DE66A9001AB172 /* playerbullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playerbullet.png; path = PhoenixRising/playerbullet.png; sourceTree = "<group>"; };
+		28DD171F17DE66A9001AB172 /* playership.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playership.png; path = PhoenixRising/playership.png; sourceTree = "<group>"; };
+		28DD172017DE66A9001AB172 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = PhoenixRising/readme.txt; sourceTree = "<group>"; };
+		28DD172117DE66AA001AB172 /* resources.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = resources.dat; path = PhoenixRising/resources.dat; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		283248E617DE58AF006E0F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285E3EB717DE59F300C3983C /* SDL_image.framework in Frameworks */,
+				285E3EB817DE59F300C3983C /* SDL_ttf.framework in Frameworks */,
+				285E3EB917DE59F300C3983C /* SDL.framework in Frameworks */,
+				285E3EB317DE59E400C3983C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		283248E017DE58AF006E0F04 = {
+			isa = PBXGroup;
+			children = (
+				28DD171217DE66A9001AB172 /* background.png */,
+				28DD171317DE66A9001AB172 /* enemybullet.png */,
+				28DD171417DE66A9001AB172 /* enemyship.png */,
+				28DD171517DE66A9001AB172 /* game_font.ttf */,
+				28DD171617DE66A9001AB172 /* highscores.dat */,
+				28DD171717DE66A9001AB172 /* level1.dat */,
+				28DD171817DE66A9001AB172 /* level2.dat */,
+				28DD171917DE66A9001AB172 /* level3.dat */,
+				28DD171A17DE66A9001AB172 /* level4.dat */,
+				28DD171B17DE66A9001AB172 /* level5.dat */,
+				28DD171C17DE66A9001AB172 /* mainmenu.png */,
+				28DD171D17DE66A9001AB172 /* menu.png */,
+				28DD171E17DE66A9001AB172 /* playerbullet.png */,
+				28DD171F17DE66A9001AB172 /* playership.png */,
+				28DD172017DE66A9001AB172 /* readme.txt */,
+				28DD172117DE66AA001AB172 /* resources.dat */,
+				285E3EB417DE59F300C3983C /* SDL_image.framework */,
+				285E3EB517DE59F300C3983C /* SDL_ttf.framework */,
+				285E3EB617DE59F300C3983C /* SDL.framework */,
+				285E3EB217DE59E400C3983C /* Cocoa.framework */,
+				285E3E8017DE59C400C3983C /* DataTypes.cpp */,
+				285E3E8117DE59C400C3983C /* DataTypes.h */,
+				285E3E8217DE59C400C3983C /* DifficultyMenu.cpp */,
+				285E3E8317DE59C400C3983C /* DifficultyMenu.h */,
+				285E3E8417DE59C400C3983C /* EnemyBullet.cpp */,
+				285E3E8517DE59C400C3983C /* EnemyBullet.h */,
+				285E3E8617DE59C400C3983C /* EnemyShip.cpp */,
+				285E3E8717DE59C400C3983C /* EnemyShip.h */,
+				285E3E8817DE59C400C3983C /* EnterNameMenu.cpp */,
+				285E3E8917DE59C400C3983C /* EnterNameMenu.h */,
+				285E3E8A17DE59C400C3983C /* Graphics.cpp */,
+				285E3E8B17DE59C400C3983C /* Graphics.h */,
+				285E3E8C17DE59C400C3983C /* HighscoresMenu.cpp */,
+				285E3E8D17DE59C400C3983C /* HighscoresMenu.h */,
+				285E3E8E17DE59C400C3983C /* Level.cpp */,
+				285E3E8F17DE59C400C3983C /* Level.h */,
+				285E3E9017DE59C400C3983C /* LoadingScreen.cpp */,
+				285E3E9117DE59C400C3983C /* LoadingScreen.h */,
+				285E3E9217DE59C400C3983C /* main.cpp */,
+				285E3E9317DE59C400C3983C /* MainMenu.cpp */,
+				285E3E9417DE59C400C3983C /* MainMenu.h */,
+				285E3E9517DE59C400C3983C /* PauseMenu.cpp */,
+				285E3E9617DE59C400C3983C /* PauseMenu.h */,
+				285E3E9717DE59C400C3983C /* Play.cpp */,
+				285E3E9817DE59C400C3983C /* Play.h */,
+				285E3E9917DE59C400C3983C /* PlayerBullet.cpp */,
+				285E3E9A17DE59C400C3983C /* PlayerBullet.h */,
+				285E3E9B17DE59C400C3983C /* PlayerShip.cpp */,
+				285E3E9C17DE59C400C3983C /* PlayerShip.h */,
+				285E3E9D17DE59C400C3983C /* SDLMain.h */,
+				285E3E9E17DE59C400C3983C /* SDLMain.m */,
+				285E3E9F17DE59C400C3983C /* XboxController.cpp */,
+				285E3EA017DE59C400C3983C /* XboxController.h */,
+				283248EB17DE58AF006E0F04 /* PhoenixRising */,
+				283248EA17DE58AF006E0F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		283248EA17DE58AF006E0F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				283248E917DE58AF006E0F04 /* PhoenixRising */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		283248EB17DE58AF006E0F04 /* PhoenixRising */ = {
+			isa = PBXGroup;
+			children = (
+				283248EE17DE58AF006E0F04 /* PhoenixRising.1 */,
+			);
+			path = PhoenixRising;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		283248E817DE58AF006E0F04 /* PhoenixRising */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283248F217DE58B0006E0F04 /* Build configuration list for PBXNativeTarget "PhoenixRising" */;
+			buildPhases = (
+				283248E517DE58AF006E0F04 /* Sources */,
+				283248E617DE58AF006E0F04 /* Frameworks */,
+				283248E717DE58AF006E0F04 /* CopyFiles */,
+				28DD173317DE6957001AB172 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoenixRising;
+			productName = PhoenixRising;
+			productReference = 283248E917DE58AF006E0F04 /* PhoenixRising */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		283248E117DE58AF006E0F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Everett Moser";
+			};
+			buildConfigurationList = 283248E417DE58AF006E0F04 /* Build configuration list for PBXProject "PhoenixRising" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 283248E017DE58AF006E0F04;
+			productRefGroup = 283248EA17DE58AF006E0F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				283248E817DE58AF006E0F04 /* PhoenixRising */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		283248E517DE58AF006E0F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285E3EA117DE59C400C3983C /* DataTypes.cpp in Sources */,
+				285E3EA217DE59C400C3983C /* DifficultyMenu.cpp in Sources */,
+				285E3EA317DE59C400C3983C /* EnemyBullet.cpp in Sources */,
+				285E3EA417DE59C400C3983C /* EnemyShip.cpp in Sources */,
+				285E3EA517DE59C400C3983C /* EnterNameMenu.cpp in Sources */,
+				285E3EA617DE59C400C3983C /* Graphics.cpp in Sources */,
+				285E3EA717DE59C400C3983C /* HighscoresMenu.cpp in Sources */,
+				285E3EA817DE59C400C3983C /* Level.cpp in Sources */,
+				285E3EA917DE59C400C3983C /* LoadingScreen.cpp in Sources */,
+				285E3EAA17DE59C400C3983C /* main.cpp in Sources */,
+				285E3EAB17DE59C400C3983C /* MainMenu.cpp in Sources */,
+				285E3EAC17DE59C400C3983C /* PauseMenu.cpp in Sources */,
+				285E3EAD17DE59C400C3983C /* Play.cpp in Sources */,
+				285E3EAE17DE59C400C3983C /* PlayerBullet.cpp in Sources */,
+				285E3EAF17DE59C400C3983C /* PlayerShip.cpp in Sources */,
+				285E3EB017DE59C400C3983C /* SDLMain.m in Sources */,
+				285E3EB117DE59C400C3983C /* XboxController.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		283248F017DE58AF006E0F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		283248F117DE58AF006E0F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		283248F317DE58B0006E0F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		283248F417DE58B0006E0F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		283248E417DE58AF006E0F04 /* Build configuration list for PBXProject "PhoenixRising" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283248F017DE58AF006E0F04 /* Debug */,
+				283248F117DE58AF006E0F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283248F217DE58B0006E0F04 /* Build configuration list for PBXNativeTarget "PhoenixRising" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283248F317DE58B0006E0F04 /* Debug */,
+				283248F417DE58B0006E0F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 283248E117DE58AF006E0F04 /* Project object */;
+}

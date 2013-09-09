@@ -10,7 +10,7 @@ PauseMenu::PauseMenu(KeyState *keystate, Graphics *g, GameState *s, GameData *d)
 	options[0] = "Resume";
 	options[1] = "Restart";
 	options[2] = "Main Menu";
-	//options[3] = "Exit";
+	options[3] = "Exit";
 
 	option = 0;
 

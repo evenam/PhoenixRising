@@ -1,5 +1,7 @@
 #include "Level.h"
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 Level::Level(string filename, KeyState *keyState, Graphics *g, GameState *s, GameData *d)
 {

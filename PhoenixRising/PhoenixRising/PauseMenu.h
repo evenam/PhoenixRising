@@ -10,7 +10,7 @@ private:
 
 	int option;
 	string options[4];
-	static const int MAX_OPTIONS = 3;//static const int MAX_OPTIONS = 4;
+	static const int MAX_OPTIONS = 4;
 	void execute_option(int op);
 public:
 	PauseMenu(KeyState *keystate, Graphics *g, GameState *s, GameData *d);

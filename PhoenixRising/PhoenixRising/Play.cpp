@@ -1,16 +1,19 @@
 #include "Play.h"
+#include <iostream>
 
 Play::Play(void)
 {
-	gm = new Graphics(800, 600, true, "Phoenix Rising");
+	gm = new Graphics(800, 600, false, "Phoenix Rising");
 	ks = new KeyState;
 	gs = new GameState;
 	gd = new GameData("highscores.dat", "resources.dat");
-	loading = new LoadingScreen(gm);
-	controller = new XboxController(0);
-
-	*gs = GS_MAIN_MENU;
+    
 	load_resources();
+	loading = new LoadingScreen(gm);
+#ifdef _WIN32
+    controller = new XboxController(0);
+#endif
+	*gs = GS_MAIN_MENU;
 }
 
 Play::~Play(void)
@@ -20,7 +23,9 @@ Play::~Play(void)
 	delete ks;
 	delete gs;
 	delete gd;
+#ifdef _WIN32
 	delete controller;
+#endif
 }
 
 void Play::start()
@@ -57,12 +62,6 @@ void Play::start()
 
 			Level *level;
 
-			if (gd->level_reset)
-			{
-				gd->level_reset = false;
-				reset_level(level);
-			}
-
 			switch (gd->level)
 			{
 			case 0:
@@ -81,6 +80,12 @@ void Play::start()
 				level = level5;
 				break;
 			}
+                
+            if (gd->level_reset)
+            {
+                gd->level_reset = false;
+                reset_level(level);
+            }
 
 			level->update();
 			level->draw();
@@ -196,6 +201,8 @@ void Play::update()
 			case SDLK_x:
 				*gs = GS_EXIT;
 				break;
+            default:
+                break;
 			}
 		}
 		else if (_event_.type == SDL_KEYUP)
@@ -220,11 +227,13 @@ void Play::update()
 			case SDLK_ESCAPE:
 				ks_kbd.key_pause = false;
 				break;
+            default:
+                break;
 			}
 		}
 	}
 	SDL_EnableUNICODE(SDL_DISABLE);
-
+#ifdef _WIN32
 	if (controller->is_connected())
 	{
 		XboxControllerState *xbcs = controller->get_state();
@@ -304,6 +313,17 @@ void Play::update()
 		ks->key_pause = true;
 	if (ks_xbc.key_space || ks_kbd.key_space)
 		ks->key_space = true;
+#else
+    
+    ks->key_up = ks_kbd.key_up;
+    ks->key_down = ks_kbd.key_down;
+    ks->key_left = ks_kbd.key_left;
+    ks->key_right = ks_kbd.key_right;
+    ks->key_pause = ks_kbd.key_pause;
+    ks->key_space = ks_kbd.key_space;
+    
+#endif
+    
 }
 
 void Play::reset_level(Level *l)
@@ -326,8 +346,7 @@ void Play::load_resources()
 		gd->resources.IMG_PLAYERBULLET = gm->load_image(param);
 		file >> param;
 		gd->resources.IMG_ENEMYBULLET = gm->load_image(param);
-		file >> param;
-		gd->resources.IMG_BACKGROUND1 = gm->load_image(param);
+		file >> param;		gd->resources.IMG_BACKGROUND1 = gm->load_image(param);
 		file >> param;
 		gd->resources.IMG_BACKGROUND2 = gm->load_image(param);
 		file >> param;
@@ -339,4 +358,6 @@ void Play::load_resources()
 		file >> param >> size;
 		gd->resources.FONT_OPTIONS = gm->load_font(param, size);
 	}
+    else
+        std::cout << "NO FUCKING FILE IDIOT";
 }

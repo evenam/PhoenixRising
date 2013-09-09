@@ -1,6 +1,11 @@
 #pragma once
 #include "DataTypes.h"
-#include "SDL.h"
+#ifdef _WIN32
+    #include "SDL.h"
+#else
+    #include "SDL/SDL.h"
+#endif
+
 #include "Graphics.h"
 #include <vector>
 #include "Level.h"
@@ -27,7 +32,9 @@ private:
 	GameData *gd;
 	void reset_level(Level *l);
 	LoadingScreen *loading;
+#ifdef _WIN32
 	XboxController *controller;
+#endif
 	void load_resources();
 
 public:

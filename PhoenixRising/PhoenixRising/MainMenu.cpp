@@ -8,7 +8,7 @@ MainMenu::MainMenu(KeyState *keystate, Graphics *g, GameState *s, GameData *d)
 	gd = d;
 
 	options[0] = "Play";
-	//options[1] = "Exit";
+	options[1] = "Exit";
 
 	option = 0;
 

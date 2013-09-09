@@ -1,5 +1,5 @@
 #include "XboxController.h"
-
+#ifdef _WIN32
 XboxController::XboxController(int number)
 {
 	num = number;
@@ -167,3 +167,5 @@ void Button::reset()
 	released = false;
 	_reset = true;
 }
+
+#endif

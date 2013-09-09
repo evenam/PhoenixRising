@@ -1,10 +1,17 @@
 #pragma once
 
-#include "SDL.h"
+#ifdef _WIN32
+    #include "SDL.h"
+    #include "SDL_image.h"
+    #include "SDL_ttf.h"
+#else
+    #include "SDL/SDL.h"
+    #include "SDL_image/SDL_image.h"
+    #include "SDL_ttf/SDL_ttf.h"
+#endif
+
 #include <string>
 #include <vector>
-#include "SDL_image.h"
-#include "SDL_ttf.h"
 #include "DataTypes.h"
 
 using namespace std;

@@ -1,6 +1,11 @@
 #pragma once
 
-#include "SDL.h"
+#ifdef _WIN32
+    #include "SDL.h"
+#else
+    #include "SDL/SDL.h"
+#endif
+
 #include <vector>
 #include <fstream>
 #include <string>
